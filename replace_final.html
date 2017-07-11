@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>字符串替换</title>
+  <link href="http://nyc.static.yuecai.com/scripts/lib/ueditor/themes/default/css/ueditor.css" type="text/css" rel="stylesheet">
+  <script type="text/javascript" src="jquery-1.6.3.min.js"></script>
+  <!-- <script type="text/javascript" src="jquery-1.7.2.min.js"></script>-->
+  <!-- <script type="text/javascript" charset="utf-8" src="ueditor/ueditor.config.noToolsbar.js"></script> -->
+  <script type="text/javascript" charset="utf-8" src="ueditor/ueditor.config.ebnew.js"></script>
+  <script type="text/javascript" charset="utf-8" src="ueditor/ueditor.all.min-fix.js"> </script>
+  <script type="text/javascript" charset="utf-8" src="ueditor/lang/zh-cn/zh-cn.js"></script>
+  <script type="text/javascript" src="replace_final.js"></script>
+
+</head>
+<style type="text/css">
+
+.edit{
+  position: relative;
+}
+.edit>span{
+  cursor: pointer;
+  position: relative;
+  background: url(edit.png)no-repeat 0 0;
+  padding-left: 5px;
+}
+/* input */
+span.hover {
+    cursor: pointer;
+    background: #eee;
+}
+.edui-default {
+    display: inline-block;
+}
+.edui-message{
+  display: none;
+}
+.edui-default,
+.edui-editor{
+  text-indent: 0;
+  float:left;
+}
+</style>
+<body>
+<div style="width:100%;height:100%;" class="content-box">
+  <div style="width:610px;height:840px;padding:15px 10px;margin:0 auto;">
+    <div style="font-family:'仿宋','华文仿宋','宋体';font-size:14pt;line-height:150%;padding-top:3px">
+      <p>尊敬的供应商：</p>
+      <p>您好！</p>
+      <div class="text-body" style="text-indent:2em;">
+        <p style="line-height: 32px;">
+          为了规范与君正集团的合作业务，集团现要求旗下合作供应商在君正悦采门户（http://junzhengbidding.app.yuecai.com/eip/jun/index.htm）---注册用户须知--采购供应商年度授权委托书中<span style="color:#ff0000;">{{下载“法人授权委托书”}}</span>
+          并填写（除<span style="color:#ff0000;">{{法定代表人签字、受委托人签字}}</span>
+          可以手写外，其他都为机打不允许手写）相应信息后，<span style="color:#ff0000;">{{加盖公章和法人章}}</span>
+          作为资质文件上传到您的悦采账号--
+          <span style="color:#ff0000;">
+          {{诚信认证--授权书&可认证资质中，请同时上传您所有的资质文件，具体操作请参照下方操作说明或咨询必联悦采客服人员，电话400-0118-000。请不晚于2017年5月1日前完成该项工作，感谢配合。}}
+          </span>
+        </p>
+        <p style="font-weight:bold;">操作说明：</p>
+        <table border="0" cellspacing="0" cellpadding="0" style="text-indent: 0;">
+          <tr>
+            <td align="left" valign="top">1、</td>
+            <td align="left" valign="top">登录进入供应商Home页，点击左侧菜单栏中的【诚信认证】。</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top">2、</td>
+            <td align="left" valign="top">点击右上角的【申请更多资质】。</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top">3、</td>
+            <td align="left" valign="top">
+              点选 <span style="color:#ff0000;font-weight:bold;">{{可认证资质}}</span> ，证书名称请选择<span style="color:#ff0000;font-weight:bold;">授权书</span> ，以图片格式上传授权书的 <span style="color:#ff0000;font-weight:bold;">第一页</span> ，点击提交。 </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top">4、</td>
+            <td align="left" valign="top">继续点击右上角的【申请更多资质】。</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top">5、</td>
+            <td align="left" valign="top">
+              点选 <span style="text-decoration:underline;">{{车辆组织由供方负责，运输风险由供方承担，运费已含在合同总价中。}}</span> <span style="color:#ff0000;font-weight:bold;">自填资质</span> ，证书名称请填写 <span style="color:#ff0000;font-weight:bold;">身份证</span> ，以图片格式上传授权书 <span style="color:#ff0000;font-weight:bold;">第二页</span> ，点击提交。 </td>
+          </tr>
+        </table>
+        <p style="font-weight:bold;">
+          <span style="color:#ff0000;font-weight:bold;">请务必按照君正的格式上传，其他格式上传无效。</span>
+        </p>
+      </div>
+    </div>
+    <div class="sign" style="font-family:'仿宋','华文仿宋','宋体';font-size:14pt;line-height:150%;width:300px;float:right;">
+      <p style="text-align:center;">内蒙古君正能源化工股份有限公司</p>
+      <p style="text-align:center;"><span>{{2017}}</span>年<span>{{4}}</span>月<span>{{19}}</span>日</p>
+      <p style="text-align:center;"><span>{{2017}}</span>年<span>{{4}}</span>月<span>{{19}}</span>日</p>
+      <p style="text-align:center;"><span>{{2017}}</span>年<span>{{4}}</span>月<span>{{19}}</span>日</p>
+    </div>
+  </div>
+</div>
+<!-- <div class="center-block">
+  <button class="submit">提交</button>
+</div> -->
+</body>
+</html>
+<script type="text/javascript">
+
+</script>
